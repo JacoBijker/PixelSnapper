@@ -1,0 +1,40 @@
+﻿<UserControl x:Class="PixelSnapper.WPF.Pages.KeybindingsPage"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:local="clr-namespace:PixelSnapper.WPF.Pages"
+             mc:Ignorable="d" 
+             d:DesignHeight="300" d:DesignWidth="300">
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="*" />
+            <RowDefinition Height="33" />
+        </Grid.RowDefinitions>
+        
+        <StackPanel Orientation="Vertical" Margin="5">
+            <Grid Height="23" Margin="0,0,0,5">
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="2*" />
+                    <ColumnDefinition Width="4*" />
+                </Grid.ColumnDefinitions>
+                <TextBlock Text="Start capturing" VerticalAlignment="Bottom" />
+                <TextBox x:Name="tbStartCapture" Grid.Column="1" Tag="StartCapture" Text="No Hotkey Defined" GotKeyboardFocus="TextBox_GotKeyboardFocus" LostKeyboardFocus="TextBox_LostKeyboardFocus" IsReadOnly="True" />
+            </Grid>
+
+            <Grid Height="23" Margin="0,0,0,5">
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="2*" />
+                    <ColumnDefinition Width="4*" />
+                </Grid.ColumnDefinitions>
+                <TextBlock Text="Cancel capturing" VerticalAlignment="Bottom" />
+                <TextBox x:Name="tbCancelCapture" Grid.Column="1" Tag="CancelCapture" Text="No Hotkey Defined" GotKeyboardFocus="TextBox_GotKeyboardFocus" LostKeyboardFocus="TextBox_LostKeyboardFocus" IsReadOnly="True" />
+            </Grid>
+            
+        </StackPanel>
+
+        <Button Grid.Row="1" HorizontalAlignment="Left" Width="120" Content="Undo Changes" Margin="5" Click="Undo_Click" />
+
+        <Button Grid.Row="1" HorizontalAlignment="Right" Width="120" Content="Apply Changes" Margin="5" Click="ApplyChanges_Click" />
+    </Grid>
+</UserControl>

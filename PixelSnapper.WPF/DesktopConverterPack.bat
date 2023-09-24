@@ -1,0 +1,1 @@
+DesktopAppConverter.exe -Installer C:\P\Tools\Deploy\PixelSnapper\ -AppExecutable ColorThief.WPF.exe -Destination C:\P\Tools\Packaged -PackageName "PixelSnapper" -Publisher "CN=BusBusStudio" -Version 1.0.0.0 -MakeAppx -Sign -Verbose -Verify

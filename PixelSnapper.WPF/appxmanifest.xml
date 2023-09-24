@@ -1,0 +1,35 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Package
+   xmlns="http://schemas.microsoft.com/appx/manifest/foundation/windows10"
+   xmlns:uap="http://schemas.microsoft.com/appx/manifest/uap/windows10"
+   xmlns:rescap="http://schemas.microsoft.com/appx/manifest/foundation/windows10/restrictedcapabilities">
+  <Identity Name="14577BusBusStudio.PixelSnapper"
+    ProcessorArchitecture="x64"
+    Publisher="CN=12C2711D-1D69-4E55-9E26-9791C3E85843"
+    Version="1.0.0.0" />
+  <Properties>
+    <DisplayName>Pixel Snapper</DisplayName>
+    <PublisherDisplayName>BusBusStudio</PublisherDisplayName>
+    <Description>Snap the color of pixels right off your screen into your clipboard</Description>
+    <Logo>Assets/StoreLogo.png</Logo>
+  </Properties>
+  <Resources>
+    <Resource Language="en-us" />
+  </Resources>
+  <Dependencies>
+    <TargetDeviceFamily Name="Windows.Desktop" MinVersion="10.0.14316.0" MaxVersionTested="10.0.14316.0" />
+  </Dependencies>
+  <Capabilities>
+    <rescap:Capability Name="runFullTrust"/>
+  </Capabilities>
+  <Applications>
+    <Application Id="Test" Executable="PixelSnapper.WPF.exe" EntryPoint="Windows.FullTrustApplication">
+      <uap:VisualElements
+       BackgroundColor="#FFFFFF"
+       DisplayName="PixelSnapper"
+       Square150x150Logo="Assets/Square150x150Logo.scale-200.png"
+       Square44x44Logo="Assets/Square44x44Logo.scale-200.png"
+       Description="Pixel Snapper - Snap the color of the pixels right off your screen into your clipboard" />
+    </Application>
+  </Applications>
+</Package>
