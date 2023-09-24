@@ -1,5 +1,5 @@
 # Pixel Snapper
-A Color Picker for Windows that allows you to retrieve the color for any pixel on your screen. This project was originally developed back in 2017 and put on the windows store.
+A Color Picker for Windows that allows you to retrieve the color for any pixel on your screen. This project was originally developed back in 2017 and released on the [Microsoft Store](https://apps.microsoft.com/store/detail/pixel-snapper/9P1HL9C3M21W).
 
 If you are interested in this type of tool on Windows, you are better off using something like [Microsoft PowerToys](https://learn.microsoft.com/en-us/windows/powertoys/)
 
