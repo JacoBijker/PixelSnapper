@@ -55,7 +55,7 @@ namespace PixelSnapper.WPF
         {
             TrayIcon = new NotifyIcon();
 
-            using (Stream iconStream = System.Windows.Application.GetResourceStream(new Uri("pack://application:,,,/PixelSnapper.WPF;component/Images/TrayIcon.ico")).Stream)
+            using (Stream iconStream = System.Windows.Application.GetResourceStream(new Uri("pack://application:,,,/ColorThief.WPF;component/Images/TrayIcon.ico")).Stream)
             {
                 TrayIcon.Icon = new System.Drawing.Icon(iconStream);
             }
